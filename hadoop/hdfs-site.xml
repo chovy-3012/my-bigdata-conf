@@ -14,7 +14,7 @@
 <configuration>
 	<property>
 		<name>dfs.namenode.name.dir</name>
-		<value>file:/data/dfs/name</value>
+		<value>file:/data1/dfs/name</value>
 	</property>
 	<property>
 		<name>dfs.replication</name>
@@ -22,7 +22,7 @@
 	</property>
 	<property>
 		<name>dfs.namenode.secondary.http-address</name>
-		<value>node11:9001</value>
+		<value>ht05:9001</value>
 	</property>
 	<property>
 		<name>dfs.webhdfs.enabled</name>
@@ -30,14 +30,14 @@
 	</property>
 	<property>
 		<name>dfs.datanode.data.dir</name>
-		<value>file:/home/data/dfs/data</value>
+		<value>file:/data1/dfs/data,file:/data2/dfs/data,file:/data3/dfs/data</value>
 	</property>
 	<property>
 		<name>dfs.permissions</name>
 		<value>false</value>
 	</property>
-        <property>
-                <name>dfs.datanode.handler.count</name>
-                <value>200</value>
-        </property>
+	<property>
+		<name>dfs.datanode.handler.count</name>
+		<value>200</value>
+	</property>
 </configuration>
